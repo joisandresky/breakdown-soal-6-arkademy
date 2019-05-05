@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1 class="text-center">Pemilu 2019</h1>
+            <br><br><br>
+            <!-- Looping data candidates dari variable candidates yang terdapat di app.js -->
+            <div ng-repeat="cn in candidates">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <!-- menampilkan nama kandidat -->
+                        <h3 class="panel-title">{{ cn.name }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <!-- menampilkan nama kandidat -->
+                        <h4>Pasangan: {{ cn.name }}</h4>
+
+                        <!-- menampilkan suara yang sudah didapat -->
+                        <h4>Suara Terkumpul: {{ cn.earned_vote }}</h4>
+                        <!-- tombol yang digunakan untuk melakukan voting -->
+                        <!-- di dalam attribut ng-click terdapat function vote(cn) yang ada pada app.js tadi -->
+                        <!-- cn merupakan alias tiap 1 data pada loopingan ini yang berisi 3 object data yaitu _id, name, earned_vote -->
+                        <button ng-click="vote(cn)" class="btn btn-primary" type="button">Tambah Suara</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pemilu 2019</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+    <!-- END STYLES -->
+
+    <!-- SCRIPTS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- END SCRIPTS -->
+
+    <!-- ANGULARJS CONTROLLER -->
+    <!-- IMPORT File Utama dari Angularjs yaitu app.js -->
+    <script src="src/app.js"></script>
+    <!-- END ANGULARJS CONTROLLER -->
+</head>
+
+<!-- tag body merupakan instance angular app -->
+
+<body ng-app="arkademy">
+    <!-- sebuah div yang di kontrol oleh MastrCtrl -->
+    <div ng-controller="MasterCtrl">
+        <!-- sebuah div yang merupakan tempat untuk menampilkan layout2 berdasarkan route yang ada -->
+        <div ui-view></div>
+    </div>
+</body>
+
+</html>
